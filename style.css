@@ -19,7 +19,7 @@ body {
 }
 #logo {
     width: 100%; /* Full width */
-    max-width: 200px; /* Maximum width */
+    max-width: 50px; /* Maximum width */
     height: auto; /* Maintain aspect ratio */
 }
 .nav-items a {
