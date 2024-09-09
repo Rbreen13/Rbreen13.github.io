@@ -36,8 +36,8 @@ body {
     align-items: center;
     height: 100vh;
     background: url('Images/Splash4.png');
+    background-repeat: no-repeat;
     color: white;
-    opacity: 0.5;
     text-align: center;
 }
 
