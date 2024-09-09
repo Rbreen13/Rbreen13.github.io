@@ -17,7 +17,6 @@ body {
         }
         .logo {
             margin-right: 10px;
-            .logo {
             max-width: 50px; /* Maximum width */
             max-height: 50px; /* Maximum height */
 }
@@ -39,7 +38,7 @@ body {
     height: 100vh;
     background: url('Images/Splash4.png');
     background-repeat: no-repeat;
-    background-size: auto 200px;
+    background-size: auto 100px;
     color: white;
     text-align: center;
 }
