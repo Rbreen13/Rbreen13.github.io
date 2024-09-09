@@ -37,7 +37,7 @@ body {
     height: 100vh;
     background: url('Images/Splash4.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 300px;
     color: white;
     text-align: center;
 }
