@@ -100,3 +100,62 @@ body {
     color: white;
     padding: 20px;
 }
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%;
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+input[name="carousel"] {
+  display: none;
+}
+
+#carousel-1:checked ~ .carousel-inner {
+  transform: translateX(0%);
+}
+
+#carousel-2:checked ~ .carousel-inner {
+  transform: translateX(-33.333%);
+}
+
+#carousel-3:checked ~ .carousel-inner {
+  transform: translateX(-66.666%);
+}
+
+.carousel-item label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-item .prev {
+  left: 10px;
+}
+
+.carousel-item .next {
+  right: 10px;
+}
+
