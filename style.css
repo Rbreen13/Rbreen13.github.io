@@ -17,8 +17,10 @@ body {
         }
         .logo {
             margin-right: 10px;
-            width: 20;
-            height: 20;
+            .logo {
+            max-width: 50px; /* Maximum width */
+            max-height: 50px; /* Maximum height */
+}
         }
         .nav {
             display: flex;
@@ -37,7 +39,7 @@ body {
     height: 100vh;
     background: url('Images/Splash4.png');
     background-repeat: no-repeat;
-    background-size: auto 300px;
+    background-size: auto 200px;
     color: white;
     text-align: center;
 }
