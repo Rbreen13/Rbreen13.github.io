@@ -17,6 +17,8 @@ body {
         }
         .logo {
             margin-right: 10px;
+            width: 50;
+            height: 50;
         }
         .nav {
             display: flex;
