@@ -8,7 +8,7 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 20px 20px;
             background-color: #f8f9fa;
         }
         .logo-heading {
@@ -17,8 +17,8 @@ body {
         }
         .logo {
             margin-right: 10px;
-            width: 50;
-            height: 50;
+            width: 20;
+            height: 20;
         }
         .nav {
             display: flex;
