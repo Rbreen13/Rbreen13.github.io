@@ -50,6 +50,7 @@ body {
 .intro p {
     font-size: 20px;
     margin: 20px 0;
+    color: #f57151;
 }
 
 .intro button {
