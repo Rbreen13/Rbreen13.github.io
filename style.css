@@ -17,7 +17,11 @@ body {
     color: #333;
     text-decoration: none;
 }
-
+#logo {
+    width: 100%; /* Full width */
+    max-width: 200px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
 .nav-items a {
     text-decoration: none;
     color: #333;
