@@ -26,7 +26,7 @@ body {
         }
         .nav a {
             text-decoration: none;
-            color: #333;
+            color: #ffffff;
         }
 
 .intro {
@@ -37,6 +37,7 @@ body {
     height: 100vh;
     background: url('Images/Splash4.png');
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
 }
