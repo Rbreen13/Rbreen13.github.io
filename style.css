@@ -50,13 +50,13 @@ body {
 }
 
     .intro h1 {
-        font-size: 60px;
+        font-size: 20vw;
         margin: 0;
         color: #313131;
     }
 
     .intro p {
-        font-size: 20px;
+        font-size: 10vw;
         margin: 20px 0;
         color: #313131;
     }
