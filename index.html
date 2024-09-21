@@ -23,33 +23,80 @@
         </nav>
     </header>
 
-    <section class="intro">
+    <section class="intro"><h2></h2>
     </section>
 
     <section class="achievements">
-        <div class="work">
+        <div class="work active" onclick="showContent('gameDev', this)">
             <img src="Images/SSLogo.png" alt="SwingShot Logo">
             <i class="fas fa-briefcase"></i>
-            <h3 class="work-heading">SwingShot</h3>
-            <p class="work-text">Dodge Obstacles, Pot the Ball</p>
+            <h3 class="work-heading">Game Development</h3>
+            <p class="work-text">Tagline</p>
         </div>
-        <div class="work">
+        <div class="work" onclick="showContent('webDev', this)">
             <img src="Images/VTLogo.png" alt="SwingShot Logo">
             <i class="fas fa-users"></i>
-            <h3 class="work-heading">VersaTiles</h3>
-            <p class="work-text">Swap, Match, Win!</p>
+            <h3 class="work-heading">Web Development</h3>
+            <p class="work-text">Tagline</p>
         </div>
-        <div class="work">
+        <div class="work" onclick="showContent('bespDev', this)">
             <img src="Images/PPLogo.png" alt="SwingShot Logo">
             <i class="fas fa-award"></i>
-            <h3 class="work-heading">UpTilt</h3>
-            <p class="work-text">Tap, Tilt, Survive.</p>
+            <h3 class="work-heading">Bespoke Development</h3>
+            <p class="work-text">Tagline</p>
         </div>
     </section>
+
+    <div id="gameDev" class="content">
+        <div class="container">
+            <div class="left">
+                <img src="Images/SSLogo.png" alt="Left Image">
+                <h3>SwingShot</h3>
+            </div>
+            <div class="center">
+                <p>Center Text</p>
+            </div>
+            <div class="right">
+                <img src="right-image.jpg" alt="Right Image">
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <img src="Images/VTLogo.png" alt="Left Image">
+                <h3>VersaTiles</h3>
+            </div>
+            <div class="center">
+                <p>Center Text</p>
+            </div>
+            <div class="right">
+                <img src="right-image.jpg" alt="Right Image">
+            </div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <img src="Images/PPLogo.png" alt="Left Image">
+                <h3>UpTilt</h3>
+            </div>
+            <div class="center">
+                <p>Center Text</p>
+            </div>
+            <div class="right">
+                <img src="right-image.jpg" alt="Right Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="webDev" class="content" style="display: none">
+
+    </div>
+    <div id="bespDev" class="content" style="display: none">
+
+    </div>
 
 
     <footer class="footer">
         <p class="copy">© 2024 Orby Studios</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
