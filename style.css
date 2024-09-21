@@ -154,8 +154,44 @@ body {
     color: white;
     padding: 20px;
 }
+@media (max-width: 600px) {
+    .work {
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+    }
+        .work i {
+            font-size: 50px;
+            color: black;
+            margin-bottom: 10px;
+        }
 
+        .work img {
+            max-width: 30%;
+            border-radius: 20px;
+            height: auto;
+        }
 
+    .work-heading {
+        font-size: 3vw;
+        color: black;
+    }
+
+    .work-text {
+        font-size: 15px;
+        color: black;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        background: url('Images/Splash4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 
 
 
