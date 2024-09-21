@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header {
@@ -13,6 +14,9 @@ body {
 }
 .h2{
     align-content:center;
+}
+.h3 {
+    font-size: 3vw;
 }
 .logo-heading {
     display: flex;
@@ -87,13 +91,19 @@ body {
     flex: 1;
     padding: 20px;
     align-items: center;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; 
 }
 
     .left img, .right img {
-        max-width: 30%;
+        max-width: 40%;
         border-radius: 20px;
         height: auto;
         align-items: center;
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+        justify-content: center;
     }
 .achievements {
     display: flex;
@@ -127,7 +137,7 @@ body {
     }
 
     .work-heading {
-        font-size: 20px;
+        font-size: 2vw;
         color: black;
     }
 
@@ -144,6 +154,8 @@ body {
     color: white;
     padding: 20px;
 }
+
+
 
 
 
