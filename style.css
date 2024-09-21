@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,7 +11,9 @@ body {
     padding: 20px 20px;
     background-color: #f8f9fa;
 }
-
+.h2{
+    align-content:center;
+}
 .logo-heading {
     display: flex;
     padding: 10px 10px;
@@ -39,59 +40,101 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
+    height: 30vh;
     background: url('Images/Splash4.png');
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    text-align: center;
 }
 
-    .intro h1 {
-        font-size: 5vw;
-        margin: 0;
-        color: #313131;
+.content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .content:nth-of-type(1) {
+        background-color: #ecfbff;
+        min-height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .intro p {
-        font-size: 5vw;
-        margin: 20px 0;
-        color: #313131;
+    .content:nth-of-type(2) {
+        background-color: #ecfbff;
+        display: flex;
+        height: 40vh;
+        justify-content: space-between;
+        align-items: center;
     }
 
+    .content:nth-of-type(3) {
+        background-color: #ecfbff;
+        display: flex;
+        height: 40vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color:white;
+    border-radius:10px;
+}
+.left, .center, .right {
+    flex: 1;
+    padding: 20px;
+    align-items: center;
+}
+
+    .left img, .right img {
+        max-width: 30%;
+        border-radius: 20px;
+        height: auto;
+        align-items: center;
+    }
 .achievements {
     display: flex;
+    gap: 10px;
     justify-content: space-around;
-    padding: 40px 80px;
+    padding: 40px 80px 0;
     background-color: white;
 }
 
 .work {
     text-align: center;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 0px 5px;
+    transition: background-color 0.25s ease;
 }
+.active {
+    background-color: #ecfbff;
+    transition: background-color 0.5s ease;
+}
+    .work i {
+        font-size: 50px;
+        color: black;
+        margin-bottom: 10px;
+    }
 
-.work i {
-     font-size: 50px;
-     color: black;
-     margin-bottom: 10px;
-}
-.work img {
-    max-width: 30%;
-    border-radius: 20px;
-    height: auto;
-}
+    .work img {
+        max-width: 30%;
+        border-radius: 20px;
+        height: auto;
+    }
 
-.work-heading {
-    font-size: 20px;
-    color: black;
-}
+    .work-heading {
+        font-size: 20px;
+        color: black;
+    }
 
-.work-text {
-    font-size: 15px;
-    color: black;
-}
+    .work-text {
+        font-size: 15px;
+        color: black;
+    }
 
 .footer {
     display: flex;
@@ -101,35 +144,6 @@ body {
     color: white;
     padding: 20px;
 }
-.container1 {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    background-color: #f0fbff;
-}
 
-.container1 img {
-    max-width: 20%;
-    border-radius: 25px;
-    height: auto;
-}
 
-    .container1 .text {
-        max-width: 50%;
-        padding: 20px;
-    }
-.container2 {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    background-color: white;
-}
-.container2 img {
-    max-width: 20%;
-    border-radius: 25px;
-    height: auto;
-}
-.container2 .text {
-    max-width: 50%;
-    padding: 20px;
-}
+
