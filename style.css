@@ -40,6 +40,9 @@ body {
         margin: 10px 10px 10px 10px;
         color: #000000;
     }
+.nav .icon {
+    display: none;
+}
 
 .intro {
     display: flex;
@@ -154,12 +157,30 @@ body {
     color: white;
     padding: 20px;
 }
-@media (max-width: 600px) {
-    .work {
-        text-align: center;
-        padding: 15px;
+
+@media (max-width: 800px) {
+
+    .nav a {
+        display: none;
+    }
+
+        .nav a.icon {
+            float: right;
+            display: block;
+        }
+
+    .achievements {
         display: flex;
-        width: 100px;
+        gap: 10px;
+        justify-content: space-around;
+        padding: 20px 40px 0;
+        background-color: white;
+    }
+    .work {
+        align-content: center;
+        padding: 10px;
+        display: flex;
+        width: 125px;
         flex-direction: column;
     }
         .work i {
@@ -169,8 +190,9 @@ body {
         }
 
         .work img {
-            max-width: 30%;
-            border-radius: 20px;
+            align-self:center;
+            max-width: 50%;
+            border-radius: 10px;
             height: auto;
         }
 
@@ -182,6 +204,7 @@ body {
     .work-text {
         font-size: 15px;
         color: black;
+        display: none;
     }
     .intro {
         display: flex;
