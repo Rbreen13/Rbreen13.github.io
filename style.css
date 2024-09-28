@@ -89,6 +89,7 @@ body {
     margin-bottom: 20px;
     background-color:white;
     border-radius:10px;
+    width:90%;
 }
 .left, .center, .right {
     flex: 1;
@@ -215,6 +216,7 @@ body {
         background-size: cover;
     }
 }
+
 
 
 
