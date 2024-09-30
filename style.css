@@ -12,6 +12,7 @@ body {
     padding: 20px 20px;
     background-color: #f8f9fa;
 }
+
 .h2{
     align-content:center;
 }
@@ -40,14 +41,14 @@ body {
         margin: 10px 10px 10px 10px;
         color: #000000;
     }
-.nav .icon {
-    display: none;
-}
+    .nav .icon {
+        display: none;
+    }
 
-.intro {
+.banner {
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    height: 25vh;
     background: url('Images/Splash4.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,38 +59,42 @@ body {
     display: flex;
     flex-direction: column;
 }
-
     .content:nth-of-type(1) {
-        background-color: #ecfbff;
+        /*background-color: #ecfbff;*/
+        background-image: linear-gradient(#ecfbff, #aee1f5);
         min-height: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        display: flex;
     }
 
     .content:nth-of-type(2) {
         background-color: #ecfbff;
         display: flex;
-        height: 40vh;
+        min-height: 80vh;
         justify-content: space-between;
         align-items: center;
-    }
+        display:none;
+        }
 
     .content:nth-of-type(3) {
         background-color: #ecfbff;
         display: flex;
-        height: 40vh;
+        min-height: 80vh;
         justify-content: space-between;
         align-items: center;
-    }
+        display:none;
+        }
 
 .container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    background-color:white;
-    border-radius:10px;
-    width:90%;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #a2ddf3;
+    width: 90%;
 }
 .left, .center, .right {
     flex: 1;
@@ -101,15 +106,17 @@ body {
 }
 
     .left img, .right img {
-        max-width: 40%;
-        border-radius: 20px;
+        max-width: 35%;
+        margin: 20px;
+        border-radius: 25px;
         height: auto;
         align-items: center;
         display: flex;
         flex-direction: column; /* Align items vertically */
         justify-content: center;
+        box-shadow: 0px 0px 15px #e4e4e4;
     }
-.achievements {
+.categories {
     display: flex;
     gap: 10px;
     justify-content: space-around;
@@ -117,7 +124,7 @@ body {
     background-color: white;
 }
 
-.work {
+.dev {
     text-align: center;
     background-color: white;
     border-radius: 20px 20px 0 0;
@@ -128,25 +135,25 @@ body {
     background-color: #ecfbff;
     transition: background-color 0.5s ease;
 }
-    .work i {
+    .dev i {
         font-size: 50px;
         color: black;
         margin-bottom: 10px;
     }
 
-    .work img {
+    .dev img {
         max-width: 30%;
         border-radius: 20px;
         height: auto;
     }
 
-    .work-heading {
+    .dev-heading {
         font-size: 2vw;
         color: black;
     }
 
-    .work-text {
-        font-size: 15px;
+    .dev-text {
+        font-size: 1vw;
         color: black;
     }
 
@@ -170,44 +177,64 @@ body {
             display: block;
         }
 
-    .achievements {
+    .Categories {
         display: flex;
         gap: 10px;
         justify-content: space-around;
         padding: 20px 40px 0;
         background-color: white;
     }
-    .work {
+    .dev {
         align-content: center;
-        padding: 10px;
+        padding: 20px;
         display: flex;
         width: 125px;
         flex-direction: column;
     }
-        .work i {
+        .dev i {
             font-size: 50px;
             color: black;
             margin-bottom: 10px;
         }
 
-        .work img {
+        .dev img {
             align-self:center;
             max-width: 50%;
             border-radius: 10px;
             height: auto;
         }
 
-    .work-heading {
+    .dev-heading {
         font-size: 3vw;
         color: black;
     }
 
-    .work-text {
+    .dev-text {
         font-size: 15px;
         color: black;
         display: none;
     }
-    .intro {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px #a2ddf3;
+        width: 99%;
+    }
+    .left img, .right img {
+        max-width: 50%;
+        margin: 10px;
+        border-radius: 20px;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+        justify-content: center;
+        box-shadow: 0px 0px 15px #e4e4e4;
+    }
+    .banner {
         display: flex;
         flex-direction: column;
         height: 20vh;
