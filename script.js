@@ -13,7 +13,7 @@ function showContent(id, clickedDiv) {
     document.getElementById(id).style.display = 'flex';
 
     // Remove 'active' class from all divs with class 'work'
-    var divs = document.querySelectorAll('.work');
+    var divs = document.querySelectorAll('.dev');
     divs.forEach(function (div) {
         div.classList.remove('active');
     });
