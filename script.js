@@ -1,12 +1,9 @@
 // script.js
-
 function showContent(id, clickedDiv) {
     // Hide all content divs
     var contents = document.querySelectorAll('.content');
     contents.forEach(function (content) {
         content.style.display = 'none';
-
-
     });
 
     // Show the selected content div
@@ -21,4 +18,3 @@ function showContent(id, clickedDiv) {
     // Add 'active' class to the clicked div
     clickedDiv.classList.add('active');
 }
-
