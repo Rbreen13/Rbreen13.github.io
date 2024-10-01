@@ -92,30 +92,100 @@ body {
     justify-content: space-between;
     margin-bottom: 40px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 20px;
+    border-style: hidden;
     box-shadow: 0px 0px 15px #a2ddf3;
-    width: 90%;
+    width: 80%;
 }
-.left, .center, .right {
+.left {
     flex: 1;
-    padding: 20px;
     align-items: center;
     display: flex;
     flex-direction: column; /* Align items vertically */
-    justify-content: center; 
+    justify-content: center;
+}
+.center {
+    flex: 3;
+    padding: 0px 50px 0px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-image: linear-gradient(#ecfbff, #e7f4fd);
+}
+.left img, .right img {
+    max-width: 80%;
+    max-height: auto;
+    margin: 20px 0px 20px 0px;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    box-shadow: 0px 0px 15px #e4e4e4;
+}
+.slide-Right {
+    position: relative;
+    animation: slideRight 1s ease-in-out forwards;
+}
+.slide-Left {
+    position: relative;
+    animation: slideLeft 1s ease-in-out forwards;
+}
+.slideout-Left {
+    position: relative;
+    animation: slideoutLeft 1s ease-in-out forwards;
+}
+.slideout-Right {
+    position: relative;
+    animation: slideLeft 1s ease-in-out forwards;
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
-    .left img, .right img {
-        max-width: 35%;
-        margin: 20px;
-        border-radius: 25px;
-        height: auto;
-        align-items: center;
-        display: flex;
-        flex-direction: column; /* Align items vertically */
-        justify-content: center;
-        box-shadow: 0px 0px 15px #e4e4e4;
+@keyframes slideoutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
     }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
 .categories {
     display: flex;
     gap: 10px;
