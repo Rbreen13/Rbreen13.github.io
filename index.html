@@ -53,9 +53,15 @@
                     skillfully dodging obstacles and collecting valuable items before aiming for the final goal.
                     The game features vibrant graphics and intuitive controls, making it both accessible and challenging for players of all ages.
                 </p>
-
+                <button id="swingShow" class="button" onclick="revealDiv('swingSub',this)">See More ></button>
+            
+            <div id="swingSub" style="display:none">
+                <p>This is the new div that appears beneath the current div.</p>
+                <button id="swingHide" class="button" onclick="closeDiv('swingSub')">See Less ></button>
+            </div>
             </div>
         </div>
+        
         <div class="container slide-Left">
             <div class="left">
                 <img src="Images/VTLogo.png" alt="Left Image">
@@ -67,8 +73,14 @@
                     released on both the App Store and Play Store. The game challenges players to swap tiles along a
                     given axis to match colors and clear the board, providing a stimulating and enjoyable experience.
                 </p>
+                <button id="versaShow" class="button" onclick="revealDiv('versaSub', this)">See More ></button>
+                <div id="versaSub" style="display: none;">
+                    <p>This is the new div that appears beneath the current div.</p>
+                    <button id="versaHide" class="button" onclick="closeDiv('versaSub')">See Less ></button>
+                </div>
             </div>
         </div>
+        
         <div class="container slide-Right">
             <div class="left">
                 <img src="Images/PPLogo.png" alt="Left Image">
@@ -80,8 +92,14 @@
                     Inspired by the simplicity and addictiveness of Flappy Bird, UpTilt challenges players to navigate a ball
                     through a series of obstacles by tapping the screen to move left or right.
                 </p>
+                <button id="upShow" class="button" onclick="revealDiv('upSub',this)">See More ></button>
+                <div id="upSub" style="display:none">
+                    <p>This is the new div that appears beneath the current div.</p>
+                    <button id="upHide" class="button" onclick="closeDiv('upSub')">See Less ></button>
+                </div>
             </div>
         </div>
+        
     </div>
 
     <div id="webDev" class="content" style="display:none">
