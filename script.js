@@ -18,3 +18,18 @@ function showContent(id, clickedDiv) {
     // Add 'active' class to the clicked div
     clickedDiv.classList.add('active');
 }
+function revealDiv(divID, button) {
+    document.getElementById('swingSub').style.display = 'none';
+    document.getElementById('versaSub').style.display = 'none';
+    document.getElementById('upSub').style.display = 'none';
+
+    document.getElementById(divID).style.display = 'block';
+    button.style.display = 'none';
+}
+function closeDiv(divID) {
+    document.getElementById('swingShow').style.display = 'block';
+    document.getElementById('versaShow').style.display = 'block';
+    document.getElementById('upShow').style.display = 'block';
+
+    document.getElementById(divID).style.display = 'none';
+}
