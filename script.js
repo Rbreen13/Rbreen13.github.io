@@ -4,6 +4,7 @@ function showContent(id, clickedDiv) {
     var contents = document.querySelectorAll('.content');
     contents.forEach(function (content) {
         content.style.display = 'none';
+
     });
 
     // Show the selected content div
@@ -19,9 +20,14 @@ function showContent(id, clickedDiv) {
     clickedDiv.classList.add('active');
 }
 function revealDiv(divID, button) {
+   
     document.getElementById('swingSub').style.display = 'none';
     document.getElementById('versaSub').style.display = 'none';
     document.getElementById('upSub').style.display = 'none';
+
+    document.getElementById('swingShow').style.display = 'block';
+    document.getElementById('versaShow').style.display = 'block';
+    document.getElementById('upShow').style.display = 'block';
 
     document.getElementById(divID).style.display = 'block';
     button.style.display = 'none';
