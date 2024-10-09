@@ -85,18 +85,18 @@ body {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
+
     .content:nth-of-type(1) {
         background-image: linear-gradient(#d1f3fd, #94ddff);
         min-height: auto;
         justify-content: space-between;
         align-items: center;
-        display: flex;
     }
 
     .content:nth-of-type(2) {
         background-image: linear-gradient(#d1f3fd, #ceddfd);
-        display: flex;
         min-height: 80vh;
         justify-content: space-between;
         align-items: center;
@@ -105,12 +105,12 @@ body {
 
     .content:nth-of-type(3) {
         background-image: linear-gradient(#d1f3fd, #ced4fd);
-        display: flex;
         min-height: 80vh;
         justify-content: space-between;
         align-items: center;
         display: none;
     }
+
 
 .button {
     background-image: linear-gradient(#d1f3fd, #94ddff);
@@ -133,15 +133,19 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 40px;
     background-color: white;
     border-radius: 20px;
     border-style: solid;
-    border-color:white;
+    border-color: white;
     border-width: 5px;
     box-shadow: 0px 0px 15px #a2ddf3;
     width: 80%;
+}
+.row {
+    display: flex;
 }
 .left {
     flex: 1;
@@ -161,7 +165,13 @@ body {
     background-image: linear-gradient(#ecfbff, #f1f8ff);
     border-left: solid #edf4ff 3px;
 }
-
+.bottom {
+    margin-top: 5px;
+    padding: 20px;
+    background-image: linear-gradient(#ecfbff, #f1f8ff);
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
 .left img, .right img {
     max-width: 80%;
     max-height: auto;
@@ -188,6 +198,16 @@ body {
 .slideout-Right {
     position: relative;
     animation: slideoutReft 1s ease-in-out forwards;
+}
+.expand-Vert {
+    transform-origin: top; /* Ensure scaling happens from the top */
+    transform: scaleY(0); /* Initial scale */
+    animation: expandVert .25s ease-in-out forwards;
+}
+.fade-In {
+    transform: scaleY(0);
+    opacity: 0; /* Initial opacity */
+    animation: expandAndFadeIn 2s ease-in-out forwards;
 }
 @keyframes slideRight {
     from {
@@ -231,6 +251,26 @@ body {
     to {
         transform: translateX(-100%);
         opacity: 0;
+    }
+}
+@keyframes expandVert {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        transform: scaleY(0); /* Adjust this value to your desired height */
+        opacity: 0;
+    }
+
+    100% {
+        transform:scaleY(1); /* Adjust this value to your desired height */
+        opacity: 1;
     }
 }
 .categories {
