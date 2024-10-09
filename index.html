@@ -40,8 +40,9 @@
         </div>
     </section>
 
-    <div id="gameDev" class="content">
+    <div id="gameDev" class="content active">
         <div class="container slide-Right">
+            <div class="row">
             <div class="left">
                 <img src="Images/SSLogo.png" alt="Left Image">
             </div>
@@ -54,15 +55,19 @@
                     The game features vibrant graphics and intuitive controls, making it both accessible and challenging for players of all ages.
                 </p>
                 <button id="swingShow" class="button" onclick="revealDiv('swingSub',this)">See More ></button>
+            </div>
             
-            <div id="swingSub" style="display:none">
+
+            </div>
+            <div id="swingSub" class="bottom fade-In" style="display:none">
+
                 <p>This is the new div that appears beneath the current div.</p>
                 <button id="swingHide" class="button" onclick="closeDiv('swingSub')">See Less ></button>
-            </div>
             </div>
         </div>
         
         <div class="container slide-Left">
+            <div class="row">
             <div class="left">
                 <img src="Images/VTLogo.png" alt="Left Image">
             </div>
@@ -74,14 +79,16 @@
                     given axis to match colors and clear the board, providing a stimulating and enjoyable experience.
                 </p>
                 <button id="versaShow" class="button" onclick="revealDiv('versaSub', this)">See More ></button>
-                <div id="versaSub" style="display: none;">
+                </div>  
+            </div>
+            <div id="versaSub" class="bottom" style="display: none;">
                     <p>This is the new div that appears beneath the current div.</p>
                     <button id="versaHide" class="button" onclick="closeDiv('versaSub')">See Less ></button>
                 </div>
-            </div>
         </div>
         
         <div class="container slide-Right">
+            <div class="row">
             <div class="left">
                 <img src="Images/PPLogo.png" alt="Left Image">
             </div>
@@ -93,19 +100,46 @@
                     through a series of obstacles by tapping the screen to move left or right.
                 </p>
                 <button id="upShow" class="button" onclick="revealDiv('upSub',this)">See More ></button>
-                <div id="upSub" style="display:none">
+            </div>
+            </div>
+            <div id="upSub" class="bottom" style="display:none">
                     <p>This is the new div that appears beneath the current div.</p>
                     <button id="upHide" class="button" onclick="closeDiv('upSub')">See Less ></button>
                 </div>
-            </div>
         </div>
         
     </div>
 
-    <div id="webDev" class="content" style="display:none">
-
+    <div id="webDev" class="content">
+        <div class="container slide-Right">
+            <div class="row">
+                <div class="left">
+                    <img src="Images/MRFCLogo.png" alt="MRFC Logo">
+                </div>
+                <div class="center">
+                    <h1 style="align-self:flex-start">MRFC Booking System</h1>
+                    <p>
+                        Details on MRFC's booking system. Our advanced SEO strategies have boosted our expected profits by 250%.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container slide-Left">
+            <div class="row">
+                <div class="left">
+                    <img src="Images/CyclingLogo.png" alt="Cycling Centre Logo">
+                </div>
+                <div class="center">
+                    <h1 style="align-self:flex-start">Irish Centre for Cycling</h1>
+                    <p>
+                        Details on Irish Centre for Cycling transformation.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="bespDev" class="content" style="display:none">
+    <div id="bespDev" class="content">
 
     </div>
 
