@@ -97,7 +97,7 @@ body {
 
     .content:nth-of-type(2) {
         background-image: linear-gradient(#d1f3fd, #ceddfd);
-        min-height: 80vh;
+        min-height: 50vh;
         justify-content: space-between;
         align-items: center;
         display: none;
