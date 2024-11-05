@@ -26,92 +26,38 @@
     <section class="banner"></section>
 
     <section class="categories">
-        <div class="dev active" onclick="showContent('gameDev', this)">
-            <img src="Images/SSLogo.png" alt="SwingShot Logo">
-            <h3 class="work-heading">Game Development</h3>
-        </div>
-        <div class="dev" onclick="showContent('webDev', this)">
+        <div class="dev active" onclick="showContent('webDev', this)">
             <img src="Images/VTLogo.png" alt="SwingShot Logo">
             <h3 class="work-heading">Web Development</h3>
         </div>
-        <div class="dev" onclick="showContent('bespDev', this)">
+        <div class="dev" onclick="showContent('gameDev', this)">
+            <img src="Images/SSLogo.png" alt="SwingShot Logo">
+            <h3 class="work-heading">Game Development</h3>
+        </div>
+
+        <!--div> class="dev" onclick="showContent('bespDev', this)">
             <img src="Images/PPLogo.png" alt="SwingShot Logo">
             <h3 class="work-heading">Bespoke Development</h3>
-        </div>
+        </div-->
     </section>
-
-    <div id="gameDev" class="content active">
+    <div id="webDev" class="content active">
         <div class="container slide-Right">
             <div class="row">
-            <div class="left">
-                <img src="Images/SSLogo.png" alt="Left Image">
+                <div class="left">
+                    <img href="https://www.drawing.ie/" src="Images/DSLogo.png" alt="Drawing School Logo" href="https://www.drawing.ie/">
+                </div>
+                <div class="center">
+                    <h1 style="align-self:flex-start">The Drawing School</h1>
+                    <p>
+                        I revamped an outdated website for a client using modern technologies on the WordPress platform. The new site is now easily customizable,
+                        freeing the client from reliance on web developers for small changes. I also provided bespoke video guides for more complex updates,
+                        such as adding new payment links and organizing the navigation menu for new sections. Additionally, I boosted their already excellent SEO ranking by 10%.
+                    </p>
+                </div>
             </div>
-            <div class="center">
-                <h1 style="align-self:flex-start">SwingShot</h1>
-                <p>
-                    SwingShot is an innovative arcade game that merges the excitement of golf and hockey into a unique and engaging experience.
-                    Players sling a puck across the screen,
-                    skillfully dodging obstacles and collecting valuable items before aiming for the final goal.
-                    The game features vibrant graphics and intuitive controls, making it both accessible and challenging for players of all ages.
-                </p>
-                <button id="swingShow" class="button" onclick="revealDiv('swingSub',this)">See More ></button>
-            </div>
-            
 
-            </div>
-            <div id="swingSub" class="bottom fade-In" style="display:none">
-
-                <p>This is the new div that appears beneath the current div.</p>
-                <button id="swingHide" class="button" onclick="closeDiv('swingSub')">See Less ></button>
-            </div>
         </div>
-        
         <div class="container slide-Left">
-            <div class="row">
-            <div class="left">
-                <img src="Images/VTLogo.png" alt="Left Image">
-            </div>
-            <div class="center">
-                <h1 style="align-self:flex-start">VersaTiles</h1>
-                <p>
-                    VersaTiles is an engaging puzzle game designed for mobile platforms,
-                    released on both the App Store and Play Store. The game challenges players to swap tiles along a
-                    given axis to match colors and clear the board, providing a stimulating and enjoyable experience.
-                </p>
-                <button id="versaShow" class="button" onclick="revealDiv('versaSub', this)">See More ></button>
-                </div>  
-            </div>
-            <div id="versaSub" class="bottom" style="display: none;">
-                    <p>This is the new div that appears beneath the current div.</p>
-                    <button id="versaHide" class="button" onclick="closeDiv('versaSub')">See Less ></button>
-                </div>
-        </div>
-        
-        <div class="container slide-Right">
-            <div class="row">
-            <div class="left">
-                <img src="Images/PPLogo.png" alt="Left Image">
-            </div>
-            <div class="center">
-                <h1 style="align-self:flex-start">UpTilt</h1>
-                <p>
-                    UpTilt is challenging endless runner game released on both the App Store and Play Store.
-                    Inspired by the simplicity and addictiveness of Flappy Bird, UpTilt challenges players to navigate a ball
-                    through a series of obstacles by tapping the screen to move left or right.
-                </p>
-                <button id="upShow" class="button" onclick="revealDiv('upSub',this)">See More ></button>
-            </div>
-            </div>
-            <div id="upSub" class="bottom" style="display:none">
-                    <p>This is the new div that appears beneath the current div.</p>
-                    <button id="upHide" class="button" onclick="closeDiv('upSub')">See Less ></button>
-                </div>
-        </div>
-        
-    </div>
-
-    <div id="webDev" class="content">
-        <div class="container slide-Right">
             <div class="row">
                 <div class="left">
                     <img src="Images/MRFCLogo.png" alt="MRFC Logo">
@@ -119,15 +65,15 @@
                 <div class="center">
                     <h1 style="align-self:flex-start">MRFC Booking System</h1>
                     <p>
-                        MRFC are new to the campervan parking business, and before enlisting our services they relied on a contact form and manual calendar entries, taking payments on arrival. 
-                        The new system tracks available spaces, shows real-time availability to customers, and processes payments at the time of booking, 
+                        MRFC are new to the campervan parking business, and before enlisting our services they relied on a contact form and manual calendar entries, taking payments on arrival.
+                        The new system tracks available spaces, shows real-time availability to customers, and processes payments at the time of booking,
                         greatly reducing no-shows. These upgrades boosted their projected earnings by 250% in 2024.
                     </p>
                 </div>
             </div>
 
         </div>
-        <div class="container slide-Left">
+        <div class="container slide-Right">
             <div class="row">
                 <div class="left">
                     <img src="Images/ICCLogo.png" alt="Cycling Centre Logo">
@@ -140,26 +86,96 @@
                 </div>
             </div>
         </div>
-        <div class="container slide-Right">
+        <div class="container slide-Left">
             <div class="row">
                 <div class="left">
-                   <img src="Images/DSLogo.png" alt="Drawing School Logo" href="https://www.drawing.ie/">
+                    <img src="Images/OrbyBlue.png" alt="Orby Studios Logo">
                 </div>
                 <div class="center">
-                    <h1 href="https://www.drawing.ie/" style="align-self:flex-start">The Drawing School</h1>
+                    <h1 style="align-self:flex-start">Orby Studios</h1>
                     <p>
-                        I revamped an outdated website for a client using modern technologies on the WordPress platform. The new site is now easily customizable, 
-                        freeing the client from reliance on web developers for small changes. I also provided bespoke video guides for more complex updates, 
-                        such as adding new payment links and organizing the navigation menu for new sections. Additionally, I boosted their already excellent SEO ranking by 10%.
+                        Welcome to my personal web development portfolio. This site, crafted entirely with HTML, CSS, and JavaScript,
+                        serves as a personal project to demonstrate my web development skills without using block editors like WordPress or Squarespace.
+                        Open-source and hosted on GitHub, it highlights my software development achievements, Enquiries can be sent to me personally at rbreen10@gmail.com!
                     </p>
                 </div>
             </div>
-
         </div>
     </div>
-    <div id="bespDev" class="content">
+    <div id="gameDev" class="content">
+        <div class="container slide-Right">
+            <div class="row">
+                <div class="left">
+                    <img src="Images/SSLogo.png" alt="Left Image">
+                </div>
+                <div class="center">
+                    <h1 style="align-self:flex-start">SwingShot</h1>
+                    <p>
+                        SwingShot is an innovative arcade game that merges the excitement of golf and hockey into a unique and engaging experience.
+                        Players sling a puck across the screen,
+                        skillfully dodging obstacles and collecting valuable items before aiming for the final goal.
+                        The game features vibrant graphics and intuitive controls, making it both accessible and challenging for players of all ages.
+                    </p>
+                    <button id="swingShow" class="button" onclick="revealDiv('swingSub',this)">See More ></button>
+                </div>
+
+
+            </div>
+            <div id="swingSub" class="bottom fade-In" style="display:none">
+
+                <p>This is the new div that appears beneath the current div.</p>
+                <button id="swingHide" class="button" onclick="closeDiv('swingSub')">See Less ></button>
+            </div>
+        </div>
+
+        <div class="container slide-Left">
+            <div class="row">
+                <div class="left">
+                    <img src="Images/VTLogo.png" alt="Left Image">
+                </div>
+                <div class="center">
+                    <h1 style="align-self:flex-start">VersaTiles</h1>
+                    <p>
+                        VersaTiles is an engaging puzzle game designed for mobile platforms,
+                        released on both the App Store and Play Store. The game challenges players to swap tiles along a
+                        given axis to match colors and clear the board, providing a stimulating and enjoyable experience.
+                    </p>
+                    <button id="versaShow" class="button" onclick="revealDiv('versaSub', this)">See More ></button>
+                </div>
+            </div>
+            <div id="versaSub" class="bottom" style="display: none;">
+                <p>This is the new div that appears beneath the current div.</p>
+                <button id="versaHide" class="button" onclick="closeDiv('versaSub')">See Less ></button>
+            </div>
+        </div>
+
+        <div class="container slide-Right">
+            <div class="row">
+                <div class="left">
+                    <img src="Images/PPLogo.png" alt="Left Image">
+                </div>
+                <div class="center">
+                    <h1 style="align-self:flex-start">UpTilt</h1>
+                    <p>
+                        UpTilt is challenging endless runner game released on both the App Store and Play Store.
+                        Inspired by the simplicity and addictiveness of Flappy Bird, UpTilt challenges players to navigate a ball
+                        through a series of obstacles by tapping the screen to move left or right.
+                    </p>
+                    <button id="upShow" class="button" onclick="revealDiv('upSub',this)">See More ></button>
+                </div>
+            </div>
+            <div id="upSub" class="bottom" style="display:none">
+                <p>This is the new div that appears beneath the current div.</p>
+                <button id="upHide" class="button" onclick="closeDiv('upSub')">See Less ></button>
+            </div>
+        </div>
 
     </div>
+
+
+    <!--div id="bespDev" class="content">
+
+    <div-->
 
 
     <footer class="footer">
