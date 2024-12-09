@@ -2,7 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: auto;
+    min-width: 400px;
 }
 
 .header {
@@ -12,13 +13,17 @@ body {
     padding: 20px 20px;
     background-color: #f8f9fa;
 }
-
-.h2{
-    align-content:center;
+.h1 {
+    font-size: 5vw;
 }
+.h2 {
+    align-content: center;
+}
+
 .h3 {
     font-size: 3vw;
 }
+
 .logo-heading {
     display: flex;
     padding: 10px 10px;
@@ -41,6 +46,7 @@ body {
         margin: 10px 10px 10px 10px;
         color: #000000;
     }
+
     .nav .icon {
         display: none;
     }
@@ -53,6 +59,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .dev {
     text-align: center;
     background-color: #f0fbff;
@@ -60,17 +67,21 @@ body {
     padding: 20px 0px 5px;
     transition: background-color 0.25s ease;
 }
+
     .dev:hover {
         background-color: #e6f7ff;
     }
+
 .active {
     background-color: #d1f3fd;
     border-color: white;
     transition: background-color 0.5s ease;
 }
+
     .active:hover {
         background-color: #d1f3fd;
     }
+
 .dev img {
     max-width: 30%;
     border-radius: 20px;
@@ -81,6 +92,7 @@ body {
     font-size: 2vw;
     color: black;
 }
+
 .content {
     padding: 40px;
     display: flex;
@@ -134,18 +146,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     background-color: white;
     border-radius: 20px;
     border-style: solid;
     border-color: white;
     border-width: 5px;
     box-shadow: 0px 0px 15px #a2ddf3;
-    width: 80%;
+    width: 90%;
 }
+
 .row {
     display: flex;
 }
+
 .left {
     flex: 1;
     align-items: center;
@@ -153,6 +167,7 @@ body {
     flex-direction: column; /* Align items vertically */
     justify-content: center;
 }
+
 .center {
     flex: 3;
     padding: 0px 50px 0px 20px;
@@ -164,6 +179,7 @@ body {
     background-image: linear-gradient(#ecfbff, #f1f8ff);
     border-left: solid #edf4ff 3px;
 }
+
 .bottom {
     margin-top: 5px;
     padding: 20px;
@@ -171,6 +187,7 @@ body {
     text-align: center;
     border-radius: 0px 0px 20px 20px;
 }
+
 .left img, .right img {
     max-width: 80%;
     max-height: auto;
@@ -187,28 +204,34 @@ body {
     position: relative;
     animation: slideRight 1s ease-in-out forwards;
 }
+
 .slide-Left {
     position: relative;
     animation: slideLeft 1s ease-in-out forwards;
 }
+
 .slideout-Left {
     position: relative;
     animation: slideoutLeft 1s ease-in-out forwards;
 }
+
 .slideout-Right {
     position: relative;
     animation: slideoutReft 1s ease-in-out forwards;
 }
+
 .expand-Vert {
     transform-origin: top; /* Ensure scaling happens from the top */
     transform: scaleY(0); /* Initial scale */
     animation: expandVert .25s ease-in-out forwards;
 }
+
 .fade-In {
     transform: scaleY(0);
     opacity: 0; /* Initial opacity */
     animation: expandAndFadeIn 2s ease-in-out forwards;
 }
+
 @keyframes slideRight {
     from {
         transform: translateX(-100%);
@@ -220,6 +243,7 @@ body {
         opacity: 1;
     }
 }
+
 @keyframes slideLeft {
     from {
         transform: translateX(100%);
@@ -231,6 +255,7 @@ body {
         opacity: 1;
     }
 }
+
 @keyframes slideoutRight {
     from {
         transform: translateX(-100%);
@@ -242,6 +267,7 @@ body {
         opacity: 1;
     }
 }
+
 @keyframes slideoutLeft {
     from {
         transform: translateX(0);
@@ -253,6 +279,7 @@ body {
         opacity: 0;
     }
 }
+
 @keyframes expandVert {
     0% {
         transform: scaleY(0);
@@ -262,6 +289,7 @@ body {
         transform: scaleY(1);
     }
 }
+
 @keyframes fadeIn {
     0% {
         transform: scaleY(0); /* Adjust this value to your desired height */
@@ -269,10 +297,11 @@ body {
     }
 
     100% {
-        transform:scaleY(1); /* Adjust this value to your desired height */
+        transform: scaleY(1); /* Adjust this value to your desired height */
         opacity: 1;
     }
 }
+
 .categories {
     display: flex;
     gap: 10px;
@@ -292,10 +321,19 @@ body {
     padding: 20px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+    .logo {
+        margin-right: 10px;
+        max-width: 50px; /* Maximum width */
+        max-height: 50px; /* Maximum height */
+    }
+    .h1 {
+        font-size: 3vw;
+    }
     .h3 {
         font-size: 2vw;
     }
+
     .nav a {
         display: none;
     }
@@ -307,18 +345,20 @@ body {
 
     .categories {
         display: flex;
-        gap: 10px;
+        gap: 0px;
         justify-content: space-around;
-        padding: 20px 10px 0;
+        padding: 20px 5px 0;
         background-color: white;
     }
+
     .dev {
         align-content: center;
         padding: 20px;
         display: flex;
-        width: 120px;
+        width: 250px;
         flex-direction: column;
     }
+
         .dev i {
             font-size: 50px;
             color: black;
@@ -326,7 +366,7 @@ body {
         }
 
         .dev img {
-            align-self:center;
+            align-self: center;
             max-width: 50%;
             border-radius: 10px;
             height: auto;
@@ -342,6 +382,7 @@ body {
         color: black;
         display: none;
     }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -352,6 +393,10 @@ body {
         box-shadow: 0px 0px 15px #a2ddf3;
         width: 99%;
     }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
     .left {
         flex: 1;
         align-items: center;
@@ -359,6 +404,7 @@ body {
         flex-direction: column;
         justify-content: center;
     }
+
     .center {
         flex: 3;
         padding: 0px 50px 0px 20px;
@@ -369,6 +415,7 @@ body {
         border-radius: 0px 0px 20px 20px;
         background-image: linear-gradient(#ecfbff, #e7f4fd);
     }
+
     .left img, .right img {
         max-width: 30%;
         margin: 10px;
@@ -380,6 +427,7 @@ body {
         justify-content: center;
         box-shadow: 0px 0px 15px #e4e4e4;
     }
+
     .banner {
         display: flex;
         flex-direction: column;
@@ -388,7 +436,4 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
 }
-
-
