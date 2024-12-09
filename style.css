@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     overflow-x: auto;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .header {
